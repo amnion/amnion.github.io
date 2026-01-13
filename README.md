@@ -1,87 +1,46 @@
 ---
-title: "About"
-permalink: "/about/"
+title: "Jacob Aaron Edwards"
+permalink: "/"
 layout: page
 ---
 
-## Github Pages
+<div class="email">jacobedwards<span>.jae</span>@gmail.<span>helix.</span>com</div>
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `your_username.github.io` and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+[github](https://github.com/amnion) |
+[linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) |
+[google scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=APjjwuaun3kig7tEeoP0x-HKIfzuPSzHeHLRdonykAG9Ah_8zOcir9_zobORiCYKiiL7NXh4yqoPceY21V55mapijMeMQ1iihgLa9KWsWMc&user=xmR4DFsAAAAJ)
 
-## Features
+## Auditory Data Scientist
 
- - dark mode
- - [KaTeX](https://katex.org) included
- - no external ressources
- - optional sidebar
- - archive page
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+I specialize in the analysis of sound, brain and behavioral data. I completed my Ph.D. at Columbia University ([Psychology](https://psychology.columbia.edu/) 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and studied biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
 
-## Installation
+My M.S. is from Colorado State University ([Biology](https://www.biology.colostate.edu/) 2015-2018) and my B.S. is from the University of Tennessee, Knoxville ([Ecology & Evolutionary Biology](https://eeb.utk.edu/) 2008-2013).
 
-To run locally [install Ruby](https://www.ruby-lang.org/en/documentation/installation/) and then run:
+Columbia's [Zuckerman Institute](https://zuckermaninstitute.columbia.edu/) did a fun take on [my story](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards).
 
-```
-git clone https://github.com/niklasbuschmann/contrast.git
-cd contrast
-gem install bundler jekyll jekyll-feed
-bundle exec jekyll serve
-```
+<img width=400 src='/assets/images/je_headshot.jpg'>
 
-## Config
+## Peer-reviewed Publications
 
-Your `_config.yml` could for example look like this:
+**Edwards JA**, Woolley SMN. **2026**. A species rules syntax model accurately organizes birdsong syllables into songs. *Scientific Reports*. In review.
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+**Edwards JA**, Rivera M, Woolley SMN. **2025**. The temporal organization of learned vocal behavior is predicted by species rather than experience. *Journal of Neuroscience* 45: e0576242025 [link](https://www.jneurosci.org/content/45/11/e0576242025)
 
-# Layout
+Rivera M, **Edwards JA**, Hauber ME, Woolley SMN. **2023**. Machine learning and statistical classification of birdsong link vocal acoustic features with phylogeny. *Scientific Reports* 13: 7076 [link](https://www.nature.com/articles/s41598-023-33825-5)
 
-show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
-show_sidebar: false             # show a sidebar instead of the usual header
-show_minimal: false             # remove all clutter
+**Edwards JA**, Risch MN, Hoke KL. **2021**. Dynamics of perineuronal nets over amphibian metamorphosis. *Journal of Comparative Neurology* 529: 1768-1778 [link](https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.25055)
 
-# Menu                          # for available icons see https://fontawesome.com/v5/icons/
+So NLT, **Edwards JA**, Woolley SMN. **2020**. Auditory selectivity for spectral contrast in cortical neurons and behavior. *Journal of Neuroscience* 40: 1015-1027 [link](https://www.jneurosci.org/content/40/5/1015)
 
-navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html", sidebaricon: home}
-  - {file: "README.md", sidebaricon: address-card}
+Williams JH, **Edwards JA**, Ramsey AJ. **2016**. Economy, efficiency, and the evolution of pollen tube growth rates. *American Journal of Botany* 103: 471-483 [link](https://bsapubs.onlinelibrary.wiley.com/doi/10.3732/ajb.1500264)
 
-external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+## Teaching
 
-comments:
-#  disqus_shortname: ""         # see https://disqus.com
-#  isso_domain: ""              # see https://isso-comments.de
+I have taught 12 semesters of undergraduate- and graduate-level courses, and have mentored many trainees.
 
-plugins:
- - jekyll-feed
-```
+See my reviews for teaching Introductory Statistics at Columbia here: 
+[2020](/assets/docs/evals_stats_2020.pdf) |
+[2022](/assets/docs/evals_stats_2022.pdf) |
+[2024](/assets/docs/evals_stats_2024.pdf)
 
-## Math
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [Jektex](https://github.com/yagarea/jektex) can be used to pre-render math on the server side.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://github.com/user-attachments/assets/8f0ef4bc-f079-495e-8c31-5867b8ccd25c)
-
-![screenshot](https://github.com/user-attachments/assets/e5e6d189-3251-41f4-baba-ff42be65f666)
-
-![screenshot](https://github.com/user-attachments/assets/d31879ae-7113-42be-b580-1e96a2aedd29)
-
-![screenshot](https://github.com/user-attachments/assets/d524ce47-8d8c-473e-afc6-79b34fae63e8)
+I helped develop and teach the [*Laboratory in Justice Data Science*](/lab-in-justice-data-science) course for Columbia graduate and undergraduate students. I am very proud of the course and you can learn more about it [here](/lab-in-justice-data-science).
