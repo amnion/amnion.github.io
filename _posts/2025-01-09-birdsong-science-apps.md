@@ -14,16 +14,21 @@ Interface for exploring single-neuron activity recorded from high-density electr
 
 ---
 
+## SpikeJungle
+Random forest model used as a processing step prior to spike sorting. The model separates real spikes from noise and movement artifacts common in electrophysiological experiments. It was trained using expertly labeled data published in [Moore & Woolley 2019](https://www.nature.com/articles/s41593-019-0458-4) and [So, Edwards & Woolley 2020](https://www.jneurosci.org/content/40/5/1015).
+
+Model output for a recording channel of a single neuron is shown in the plot below. The subject started moving about halfway through the experiment (clusters of vertical points). The model successfully distinguished movement artifacts (red colors) from real spikes (black colors). This [manuscript](/assets/docs/spikejungle_writeup.pdf) gives more detail on the model training, use and visualization.
+
+<img src='/assets/images/spike_jungle.png'>
+
+---
+
 ## Ephys Decoder
 Interface collecting multiple analyses of neural population decoding, including population trajectories with PCA ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
 
-This is cool: click the speaker on the left to hear an actual zebra finch song that a zebra finch listened to. Next, click the speaker on the right to hear the same song "reconstructed" from the spike activity of that zebra finch's auditory cortex neurons!
+This is cool: click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song "reconstructed" from the spikes of the neurons shown in the same plot!
 
-| real stimulus | reconstructed stimulus |
-|----------------------------------------|
-| [sound of real](/assets/docs/stim_real.mp4) | [sound of recon](/assets/docs/stim_recon.mp4) |
-
-It's not great, but you can hear IT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+| [real stimulus](/assets/docs/stim_real.mp4) | [reconstructed stimulus](/assets/docs/stim_recon.mp4) |
 
 <img src='/assets/images/ephys_decoder.png'>
 
