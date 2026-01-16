@@ -43,4 +43,4 @@ See my reviews for teaching Introductory Statistics at Columbia here:
 [2022](/assets/docs/evals_stats_2022.pdf) |
 [2024](/assets/docs/evals_stats_2024.pdf)
 
-I helped develop and teach the [*Laboratory in Justice Data Science*](/lab-in-justice-data-science) course for Columbia graduate and undergraduate students. I am very proud of the course and you can learn more about it [here](/lab-in-justice-data-science).
+I helped develop and teach the [*Laboratory in Justice Data Science*](2026/01/08/lab-in-justice-data-science) course for Columbia graduate and undergraduate students. I am very proud of the course, and you can learn more about it [here](2026/01/08/lab-in-justice-data-science).
