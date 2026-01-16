@@ -1,5 +1,5 @@
 ---
-title:  "Birdsong science apps"
+title:  "birdsong science apps"
 layout: post
 ---
 
@@ -24,7 +24,7 @@ Model output for a recording channel of a single neuron is shown in the plot bel
 ---
 
 ## Ephys Decoder
-Interface collecting multiple analyses of neural population decoding, including a type of latent space analysis ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
+Interface collecting multiple algorithms of neural population decoding, including a type of latent space analysis ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
 
 This is cool: click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song "reconstructed" from the spikes of the neurons shown in the same plot!
 

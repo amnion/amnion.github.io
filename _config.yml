@@ -1,6 +1,6 @@
-#title: "Jacob Edwards"
-author: "Jacob Edwards"
-permalink: /:title/
+title: "Jacob Edwards"
+#author: "Jacob Edwards"
+#permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
