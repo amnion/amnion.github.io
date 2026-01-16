@@ -3,7 +3,7 @@ title:  "Laboratory in justice data science"
 layout: post
 ---
 
-In the spring of 2022 and 2024 I developed, taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, led by [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions.
+In the spring of 2022 and 2024 I developed, taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, led by [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions. Below are details about my part of the course, including my full curriculum and assignments or R code.
 
 Capstone projects were policy proposals that included deep analyses of issues such as the propagation of violence through New York gangs networks, migration of talent out of East Coast cities due to anti-LGBTQ policies ("brain drain"), and [geographic relationships between rates of police force use and domestic violence](https://journals.sagepub.com/doi/full/10.1177/10778012251369024).
 
