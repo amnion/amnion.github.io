@@ -12,7 +12,7 @@ layout: page
 
 ## Auditory Data Scientist
 
-I specialize in sound, brain and behavioral data. I completed my Ph.D. at Columbia University (Psychology 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and studied biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
+I specialize in sound and brain data. I completed my Ph.D. at Columbia University (Psychology 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and studied biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
 
 My M.S. is from Colorado State University (Biology 2015-2018; [thesis research](https://mountainscholar.org/items/a4c01647-1c0e-4542-865b-70303540fa55)) and my B.S. is from the University of Tennessee, Knoxville (Ecology & Evolutionary Biology 2008-2013).
 
