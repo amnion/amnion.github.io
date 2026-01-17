@@ -3,16 +3,11 @@ title:  "laboratory in justice data science"
 layout: post
 ---
 
-In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions and evaluating social and criminal justice issues quantitatively. I wrote and taught 10 lectures 8 assignments on principles of data science, programming and communication. Below is an example slide I used to open a discussion on wrong and right ways to visualize data. Students learned to create graphics like this in R, along with many other skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks.
+In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions and evaluating social and criminal justice issues quantitatively. I wrote and taught 10 lectures and 8 assignments on the principles of data science, programming and communication.
+
+Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, along with many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks.
 
 <img width=600 src='/assets/images/jds_screengrab.png'>
-
-My philosophy for teaching data science in R is three-fold (**+1**):
-1. use real, *messy* data that genuinely interests students, as the vehicle for teaching - the lesson is we can solve any problem and answer any question together
-2. emphasize solid fundamentals that generalize across languages (*e.g.* understanding proper indexing versus [tidyverse shortcuts](https://matloff.github.io/TidyverseSkeptic/Skeptic.html)) - we can do amazing things but we do need to bone up and actually understand shit XXXXXXXX
-3. show students that they understand more than they think they do, because simple ideas are often masked by unnecessary and obtuse language (I call this process "de-jargonization")
-
-The (**+1**) is the "why" that permeates all aspects of teaching. My priority is *always* for students to understand "why" I want them to do a particular exercise. And I always want it clear "why" I make performance judgements such as point deductions, *etc*. If I cannot explain clearly my "why", then how can I expect my students to do better? Unfortunately for my students, this makes me a harsh judge because I am good at explaining my "why". I do my best to lead by example.
 
 Students found my teaching style effective. Here are their evaluations of me (excerpts below): [2022](/assets/docs/evals_jds_2022.pdf) |
 [2024](/assets/docs/evals_jds_2024.pdf)
