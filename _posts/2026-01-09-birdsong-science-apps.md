@@ -3,7 +3,7 @@ title:  "birdsong science apps"
 layout: post
 ---
 
-During my Ph.D., I wrote a lot of software for data management, analysis and visualization. Data were usually audio recordings of birds singing, or electrical recordings of birds' brain activity while they listened to songs. Below are short descriptions and screenshots of a few programs I wrote to help me work, which were mostly written using MATLAB and R. Contact me if you are interested in using any for your own projects.
+During my PhD, I wrote a lot of software for data management, analysis and visualization. Data were usually audio recordings of birds singing, or electrical recordings of birds' brain activity while they listened to songs. Below are short descriptions and screenshots of a few programs I wrote to help me work, which were mostly written using MATLAB and R. Contact me if you are interested in using any for your own projects.
 
 ---
 
@@ -26,9 +26,9 @@ Model output for a recording channel of a single neuron is shown in the plot bel
 ## Ephys Decoder
 Interface collecting multiple algorithms of neural population decoding, including a type of latent space analysis ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
 
-This is cool: click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song "reconstructed" from the spikes of the neurons shown in the same plot!
+This is cool: click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song reconstructed from activity of the neurons shown in the same plot.
 
-| [real stimulus](/assets/docs/stim_real.mp4) | [reconstructed stimulus](/assets/docs/stim_recon.mp4) |
+| [real song](/assets/docs/stim_real_proc.wav) | [reconstructed song](/assets/docs/stim_recon_proc.wav) |
 
 <img src='/assets/images/ephys_decoder.png'>
 

@@ -3,9 +3,9 @@ title:  "laboratory in justice data science"
 layout: post
 ---
 
-In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions and evaluating social and criminal justice issues quantitatively. I wrote and taught 10 lectures and 8 assignments on the principles of data science, programming and communication.
+In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions and evaluating social and criminal justice issues quantitatively. I wrote and taught 20 hours of lectures and 7 assignments on the principles of data science, programming, modeling ethics and communication.
 
-Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, along with many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks.
+Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, along with many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial biases in data used to create predictive models of crime. 
 
 <img width=600 src='/assets/images/jds_screengrab.png'>
 
@@ -15,7 +15,7 @@ Students found my teaching style effective. Here are their evaluations of me (ex
 
 > Lowkey wish I could have just taken his part of the class.
 
-I am most proud of the assignments I wrote for the course, and students found them valuable as well. Feedback on my assignments included comments such as:
+I am most proud of the assignments I wrote for the course, and students found them valuable. Feedback on my assignments included comments such as:
 > I found this assignment very cool and I feel like I learned a lot. I'm glad that we use real world examples because I like that I think about the assignment even after it is turned in.
 
 > Thank you again for all the amazing labs and very thoughtful assignments! This class is definitely one of the most amazing classes I have ever had. And it added a lot on my data analyzing skills, which I believe would be helpful for me.
@@ -30,7 +30,7 @@ Below is the full curriculum for my part of the course:
 |  | Lecture | Description | Assignment | Data sources |
 |------------------------------------------------------|
 | 1 | [Software choices](/assets/jds ppts/lab 1 ppt - software choices.pptx) | Why write code? Comparing and contrasting Python and R. | [Assignment 1](/jds assignments/A1 software choices.pdf) | [Stanford Open Policing](https://openpolicing.stanford.edu/)
-| 2 | Online data | Getting data the easy and hard ways. APIs. Parsing HTML and building a spider. | [Assignment 2](/jds assignments/A2 online data.html) | [Wikipedia](https://www.wikipedia.org/)
+| 2 | [Online data](/assets/jds ppts/lab 2 ppt - online data sources.pptx) | Getting data the easy and hard ways. APIs. Parsing HTML and building a spider. | [Assignment 2](/jds assignments/A2 online data.html) | [Wikipedia](https://www.wikipedia.org/)
 | 3 | Data wrangling | Tables. Logical indexing and regular expressions. Learning different words for the same things (de-jargonization). | [Assignment 3](/jds assignments/A3 data wrangling.html) | [NYC OpenData](https://opendata.cityofnewyork.us/)
 | 4 | Visualization I | Classic plots and classic blunders. Bar, box, and scatter. Tufte principles. Getting involved in land wars in Asia. | [Assignment 4](/jds assignments/A4 data visualization I.html) | [NYC OpenData](https://opendata.cityofnewyork.us/)
 | 5 | Visualization II | Dimensions, and how to graph more than two of them. Making maps with shapefiles, APIs and custom R functions. | [Assignment 5](/jds assignments/A5 data visualization II.html); [NYC Districts exercise](/jds assignments/SQF shapefile mapping.html) | [Snow's 1854 Cholera Map Data](https://blog.rtwilson.com/john-snows-famous-cholera-analysis-data-in-modern-gis-formats/)
