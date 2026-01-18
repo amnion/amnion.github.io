@@ -3,9 +3,9 @@ title:  "laboratory in justice data science"
 layout: post
 ---
 
-In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed serious analytical skills for influencing policy decisions and evaluating social and criminal justice issues quantitatively. I wrote and taught 20 hours of lectures and 7 assignments on the principles of data science, programming, modeling ethics and communication.
+In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed quantitative analytical skills for influencing policy decisions and evaluating social and criminal justice issues. I wrote and taught 20 hours of lectures and 7 assignments on data science principles, programming, communication and ethics.
 
-Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, along with many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial biases in data used to create predictive models of crime. 
+Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, and many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial bias in data used to create predictive models of crime. 
 
 <img width=600 src='/assets/images/jds_screengrab.png'>
 
