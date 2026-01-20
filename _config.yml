@@ -19,7 +19,7 @@ show_minimal: true             # remove all clutter
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: "jacob", file: "README.md"}
   - {title: "portfolio", file: "portfolio.html"}
-  - {title: "résumé", url: "Edwards Resume 2026 1 18.pdf", target: blank}
+  - {title: "résumé", url: "Edwards Resume 2026 1 20.pdf", target: blank}
   
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
