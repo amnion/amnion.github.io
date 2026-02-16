@@ -5,15 +5,10 @@ layout: post
 
 In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed quantitative analytical skills for influencing policy decisions and evaluating social and criminal justice issues. I wrote and taught 20 hours of lectures and 7 assignments on data science principles, programming, communication and ethics.
 
-Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, and many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial bias in data used to create predictive models of crime. 
+Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, and many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial bias in data used to create predictive models of crime. Students rated my teaching style highly in evaluations: [2024](/assets/docs/evals_jds_2024.pdf) |
+[2022](/assets/docs/evals_jds_2022.pdf)
 
 <img width=600 src='/assets/images/jds_screengrab.png'>
-
-Students found my teaching style effective. Here are their evaluations of me (excerpts below): [2022](/assets/docs/evals_jds_2022.pdf) |
-[2024](/assets/docs/evals_jds_2024.pdf)
-> Have Jacob to thank for teaching me R! Such a helpful and knowledgeable TA
-
-> Lowkey wish I could have just taken his part of the class.
 
 I am most proud of the assignments I wrote for the course, and students found them valuable. Feedback on my assignments included comments such as:
 > I found this assignment very cool and I feel like I learned a lot. I'm glad that we use real world examples because I like that I think about the assignment even after it is turned in.

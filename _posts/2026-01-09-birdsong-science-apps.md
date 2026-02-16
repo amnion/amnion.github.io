@@ -3,7 +3,7 @@ title:  "birdsong science apps"
 layout: post
 ---
 
-During my PhD, I wrote a lot of software for data management, analysis and visualization. Data were usually audio recordings of birds singing, or electrical recordings of birds' brain activity while they listened to songs. Below are short descriptions and screenshots of a few programs I wrote to help me work, which were mostly written using MATLAB and R. Contact me if you are interested in using any for your own projects.
+During my PhD, I wrote a lot of software for data management, analysis and visualization. Data were usually audio recordings of birds singing, or electrical recordings of birds' brain activity while they listened to songs. Below are short descriptions and screenshots of a few programs I wrote to help me work, which were written in some combination of Python, MATLAB and R.
 
 ---
 
@@ -15,9 +15,9 @@ Interface for exploring single-neuron activity recorded from high-density electr
 ---
 
 ## SpikeJungle
-Random forest model used as a noise reduction step in electrophysiological experiments. The model separates real spikes from noise and movement artifacts. I trained it using ground truth data published in [Moore & Woolley 2019](https://www.nature.com/articles/s41593-019-0458-4) and [So, Edwards & Woolley 2020](https://www.jneurosci.org/content/40/5/1015). The model performed very well and saved me hundreds of hours of work.
+Random forest model used as a noise reduction step in electrophysiological experiments. The model separates real spikes from noise and movement artifacts. I trained it using ground truth data published in [Moore & Woolley 2019](https://www.nature.com/articles/s41593-019-0458-4) and [So, Edwards & Woolley 2020](https://www.jneurosci.org/content/40/5/1015). The model performed very well and saved me hundreds of hours of manual cleaning labor.
 
-Model output for a recording channel of a single neuron is shown in the plot below. The subject started moving about halfway through the experiment (clusters of vertical points). The model successfully distinguished movement artifacts (red) from real spikes (black). This [manuscript](/assets/docs/spikejungle_writeup.pdf) gives more detail on the model training, use and visualization.
+Model output for a recording channel of an example single neuron is shown in the plot below. The subject started moving about halfway through the experiment (clusters of vertical points). The model successfully distinguished movement artifacts (red) from real spikes (black). This [manuscript](/assets/docs/spikejungle_writeup.pdf) gives more detail on the model training, use and visualization.
 
 <img src='/assets/images/spike_jungle.png'>
 
@@ -26,7 +26,7 @@ Model output for a recording channel of a single neuron is shown in the plot bel
 ## Ephys Decoder
 Interface collecting multiple algorithms of neural population decoding, including a type of latent space analysis ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
 
-This is cool: click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song reconstructed from activity of the neurons shown in the same plot.
+Click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song reconstructed from activity of the neurons shown in the same plot.
 
 | [real song](/assets/docs/stim_real_proc.wav) | [reconstructed song](/assets/docs/stim_recon_proc.wav) |
 
@@ -35,7 +35,7 @@ This is cool: click the sound on the left to hear the actual double-barred finch
 ---
 
 ## SylLabeler
-Data annotation interface to help with labeling syllables in birdsong. Sequence analyses like those used in NLP require discrete, labeled units (e.g. ABCABCABC). For text or speech, this is intuitive because words are already discrete units. For other animal vocalizations, like birdsong, units have to be classified and then labeled based on their acoustic similarities and differences. I made and used this app for several projects to label and keep track of tens of thousands of syllables and dozens of tutor-pupil relationships. It also implements dimensionality reduction and basic clustering to help with classifying song syllables into types.
+Database management and annotation interface to help with labeling syllables in birdsong. Sequence analyses like those used in NLP require discrete, labeled units (e.g. ABCABCABC). For text or speech, this is intuitive because words are already discrete units. For other animal vocalizations, like birdsong, units have to be classified and then labeled based on their acoustic similarities and differences. I made and used this app for several projects to label and keep track of tens of thousands of syllables and dozens of tutor-pupil relationships. It also implements dimensionality reduction and basic clustering to help with classifying song syllables into types.
 
 <img src='/assets/images/syllabeler.gif'>
 

@@ -10,9 +10,9 @@ layout: page
 [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) |
 [google scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=APjjwuaun3kig7tEeoP0x-HKIfzuPSzHeHLRdonykAG9Ah_8zOcir9_zobORiCYKiiL7NXh4yqoPceY21V55mapijMeMQ1iihgLa9KWsWMc&user=xmR4DFsAAAAJ)
 
-## Auditory Data Scientist
+## Data Scientist
 
-I specialize in sound and brain data. I completed my PhD at Columbia University (Psychology 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and was a study of biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
+I am broadly skilled in data science and specialize in the analysis of large-scale time-series data, including brain and audio signals. I completed my PhD at Columbia University (Psychology 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and was a study of biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
 
 My MSc is from Colorado State University (Biology 2015-2018; [thesis research](https://mountainscholar.org/items/a4c01647-1c0e-4542-865b-70303540fa55)) and my BSc is from the University of Tennessee, Knoxville (Ecology & Evolutionary Biology 2008-2013).
 
@@ -39,8 +39,8 @@ Williams JH, **Edwards JA**, Ramsey AJ. **2016**. [Economy, efficiency, and the 
 I have taught 12 semesters of undergraduate- and graduate-level courses, and have mentored many trainees.
 
 See my reviews for teaching Introductory Statistics at Columbia here: 
-[2020](/assets/docs/evals_stats_2020.pdf) |
+[2024](/assets/docs/evals_stats_2024.pdf) |
 [2022](/assets/docs/evals_stats_2022.pdf) |
-[2024](/assets/docs/evals_stats_2024.pdf)
+[2020](/assets/docs/evals_stats_2020.pdf)
 
 I helped develop and teach the [*Laboratory in Justice Data Science*](2026/01/08/lab-in-justice-data-science) course for Columbia graduate and undergraduate students. I am very proud of the course, and you can learn more about it [here](2026/01/08/lab-in-justice-data-science).
