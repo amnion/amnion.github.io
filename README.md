@@ -10,10 +10,6 @@ layout: page
 [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) |
 [google scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=APjjwuaun3kig7tEeoP0x-HKIfzuPSzHeHLRdonykAG9Ah_8zOcir9_zobORiCYKiiL7NXh4yqoPceY21V55mapijMeMQ1iihgLa9KWsWMc&user=xmR4DFsAAAAJ)
 
-## Data Scientist
-
-I am broadly skilled in data science techniques and specialize in the analysis of large-scale time-series data, including brain and audio signals.
-
 I completed my PhD at Columbia University (Psychology 2019-2025) in [Dr. Sarah MN Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and was a study of biological constraints on the temporal and sequential organization of birdsong, which is the animal model used to study speech learning, production and perception.
 
 My MSc is from Colorado State University (Biology 2015-2018; [thesis research](https://mountainscholar.org/items/a4c01647-1c0e-4542-865b-70303540fa55)) and my BSc is from the University of Tennessee, Knoxville (Ecology & Evolutionary Biology 2008-2013).
