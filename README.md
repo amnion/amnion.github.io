@@ -14,7 +14,7 @@ layout: page
 
 I am a scientist specializing in the analysis of sound and brain data.
 
-I completed my PhD at Columbia University (Psychology 2019-2025) in [Dr. Sarah MN Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and was a study of constraints on the temporal and sequential organization of birdsong, the animal model of speech production and perception. I also created and taught an original, highly-rated [course in applied data science](2026/01/08/lab-in-justice-data-science) for Columbia students of diverse backgrounds.
+I completed my PhD at Columbia University (Psychology 2019-2025) in [Sarah Woolley's lab](https://woolleylab.com/). My [dissertation research](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) was funded by an [NIH training grant](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688) and was a study of constraints on the temporal and sequential organization of birdsong, the premier experimental model of speech production and perception. I also created and taught an original, highly-rated [course in applied data science](2026/01/08/lab-in-justice-data-science) for Columbia students of diverse backgrounds.
 
 Previously, I completed a MSc [thesis](https://mountainscholar.org/items/a4c01647-1c0e-4542-865b-70303540fa55) at Colorado State University (Biology 2015-2018) and a BSc at the University of Tennessee, Knoxville (Biology 2008-2013).
 
