@@ -1,28 +1,41 @@
 ---
-title:  "laboratory in justice data science"
+title:  "applied data science: course design & teaching"
 layout: post
 ---
 
-In the spring of 2022 and 2024 I co-developed, co-taught and wrote the assignments for a new Columbia University course, *Laboratory in Justice Data Science*, with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). Graduate and undergraduate students developed quantitative analytical skills for influencing policy decisions and evaluating social and criminal justice issues. I wrote and taught 20 hours of lectures and 7 assignments on data science principles, programming, communication and ethics.
+In 2022 and 2024 I co-designed and taught the *Laboratory in Justice Data Science* at Columbia University, an original applied data science course for graduate and undergraduate students, developed alongside faculty [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger).
 
-Below is an example slide I used to open a discussion on the wrong and right ways to visualize data. Students learned to create graphics like this in R, and many other skills. We worked on skills spanning fundamentals like boolean indexing and regular expressions, to advanced modeling with random forests and neural networks. Each lesson was rooted in a justice-related issue that was assessed quantitatively, such as systemic racial bias in data used to create predictive models of crime. Students rated my teaching style highly in evaluations: [2024](/assets/docs/evals_jds_2024.pdf) |
-[2022](/assets/docs/evals_jds_2022.pdf)
+We built the course around a single conviction: data science skills are best learned when the data matter. Each lesson was grounded in a real policy problem. Examples included racial bias in recidivism prediction algorithms, geographic patterns of police use of force, and the spread of misinformation through social networks. Students left able to wrangle, model, visualize, and explain what their results meant for people.
+
+I wrote and taught 20 hours of original lectures and 7 hands-on assignments covering the full stack: APIs and web scraping, data wrangling, visualization, predictive modeling, algorithmic fairness, NLP, network analysis, and meta-analysis. All in R, on real datasets with real policy stakes. Students evaluated my teaching highly: [2022](/assets/docs/evals_jds_2022.pdf) · [2024](/assets/docs/evals_jds_2024.pdf). Below is an example slide I made to start a discussion on the wrong and right ways to visualize data.
 
 <img width=600 src='/assets/images/jds_screengrab.png'>
 
-I am most proud of the assignments I wrote for the course, and students found them valuable. Feedback on my assignments included comments such as:
+Assignments were designed to stretch students' analytical and critical thinking. Feedback included:
 > I found this assignment very cool and I feel like I learned a lot. I'm glad that we use real world examples because I like that I think about the assignment even after it is turned in.
 
 > Thank you again for all the amazing labs and very thoughtful assignments! This class is definitely one of the most amazing classes I have ever had. And it added a lot on my data analyzing skills, which I believe would be helpful for me.
 
-Students' capstone projects blew my mind each semester. Projects were policy proposals that included deep analyses of issues such as the propagation of violence through networks of gangs in Brooklyn, New York, migration of talent out of East Coast cities due to anti-LGBTQ policies ("brain drain"), and [geographic relationships between rates of police force use and domestic violence](https://journals.sagepub.com/doi/full/10.1177/10778012251369024).
+Students produced original policy proposals as capstone projects. Examples of what they built:
+
+ • Network analysis of violence propagation through gang affiliations in Brooklyn, using graph centrality to identify highest-leverage intervention points.
+
+ • Demographic analysis of talent migration out of East Coast cities in response to anti-LGBTQ legislation, showing "brain drain" in economic and human capital terms.
+
+ • Risk analysis of cybersecurity breaches in relation to AI, indicating that low-income regions of the US are at the highest security risk. [Published](https://www.culawreview.org/) in the *Columbia Undergraduate Law Review*.
+
+ • Geospatial analysis of the relationship between police use-of-force rates and domestic violence incidence across NYC precincts. [Published](https://journals.sagepub.com/doi/full/10.1177/10778012251369024) in the peer-reviewed journal *Violence Against Women*.
+
+Most students entered the course with little to no coding experience. All of them exited with serious data chops, and some had their career trajectories significantly impacted. One student declared Statistics as a major and went on to work with Columbia's Center for Justice for several years. Another used what she learned about R and NLP to pursue a Master's in Global Media and Communications at the London School of Economics. A third went on to obtain a Master's in Urban Data Science at NYU.
+
+These outcomes are what the course was for.
 
 ---
 
-Below is the full curriculum for my part of the course:
+**Full curriculum for my part of the course:** each `Lecture` links to my Powerpoint slides, each `Assignment` to the R markdown document students worked from, and each `Data source` to the real-world data at the lesson's center.
 
 |------------------------------------------------------|
-|  | Lecture | Description | Assignment | Data sources |
+|  | Lecture | Description | Assignment | Data source |
 |------------------------------------------------------|
 | 1 | [Software choices](/assets/jds ppts/lab 1 ppt - software choices.pdf) | Why write code? Comparing and contrasting Python and R. | [Assignment 1](/jds assignments/A1 software choices.pdf) | [Stanford Open Policing](https://openpolicing.stanford.edu/)
 | 2 | [Online data](/assets/jds ppts/lab 2 ppt - online data sources.pdf) | Getting data the easy and hard ways. APIs. Parsing HTML and building a spider. | [Assignment 2](/jds assignments/A2 online data.html) | [Wikipedia](https://www.wikipedia.org/)

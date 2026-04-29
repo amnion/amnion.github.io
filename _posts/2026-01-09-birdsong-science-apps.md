@@ -1,47 +1,63 @@
 ---
-title:  "birdsong science apps"
+title:  "data science tools"
 layout: post
 ---
 
-During my PhD, I wrote a lot of software for data management, analysis and visualization. Data were usually audio recordings of birds singing, or electrical recordings of birds' brain activity while they listened to songs. Below are short descriptions and screenshots of a few programs I wrote to help me work, which were written in some combination of Python, MATLAB and R.
+Collection of tools I built for data management, analysis, and visualization, primarily on large-scale time-series datasets from acoustic and electrophysiological experiments.
 
 ---
 
 ## Ephys Explorer
-Interface for exploring single-neuron activity recorded from high-density electrodes implanted in the brains of songbirds. The animation below is a crop from the interface showing 1,698 neurons from the auditory cortices of 5 double-barred finches responding to a song of their own species, slowed down about 100x. Neurons are points in 3D brain space (stereotaxic coordinates) with point size showing spike rate. The two point clouds are the left and right brain hemispheres. The white line is a frequency power spectrum of the stimulus (0-10 kHz, left to right), and the stimulus song spectrogram is below with a red line indicating the current moment in time. 
+Custom 3D visualization tool for exploring how individual neurons in a living brain respond to sound in real time and across both hemispheres.
+
+The animation shows 1,700 neurons lighting up as a bird hears one of its own species' songs. Each point in space is a neuron; its size shows how rapidly it's firing. The two clouds are the left and right auditory cortex. The sound's frequency spectrum scrolls in real time above the spectrogram, so you can watch the brain tracking the structure of the song as it unfolds, slowed down 100× so the dynamics are visible.
+
+Built to support exploratory analysis across large multi-electrode recording sessions. The interface made it possible to spot spatial patterns, outliers, and stimulus-response structure that would be invisible in a table or a standard 2D plot.
 
 <img src='/assets/images/ephys_explorer.gif'>
 
 ---
 
 ## SpikeJungle
-Random forest model used as a noise reduction step in electrophysiological experiments. The model separates real spikes from noise and movement artifacts. I trained it using ground truth data published in [Moore & Woolley 2019](https://www.nature.com/articles/s41593-019-0458-4) and [So, Edwards & Woolley 2020](https://www.jneurosci.org/content/40/5/1015). The model performed very well and saved me hundreds of hours of manual cleaning labor.
+Random forest classifier that automates the noisiest step in neural data collection: distinguishing real electrical signals from movement artifacts and equipment noise.
 
-Model output for a recording channel of an example single neuron is shown in the plot below. The subject started moving about halfway through the experiment (clusters of vertical points). The model successfully distinguished movement artifacts (red) from real spikes (black). This [manuscript](/assets/docs/spikejungle_writeup.pdf) gives more detail on the model training, use and visualization.
+Manual cleaning of electrophysiology recordings is tedious, error-prone, and hard to scale. A single experiment can produce hours of data requiring expert review, spike-by-spike. SpikeJungle eliminated hundreds of hours of that work by training on ground truth labels from two published datasets ([Moore & Woolley 2019](https://www.nature.com/articles/s41593-019-0458-4); [So, Edwards & Woolley 2020](https://www.jneurosci.org/content/40/5/1015)) and generalizing well to new recordings.
+
+The plot below shows a representative example. The subject started moving halfway through the recording session, flooding the channel with artifacts (red). The classifier separates them from real neural spikes (black) without manual intervention. This [manuscript](/assets/docs/spikejungle_writeup.pdf) gives more detail on the problem structure and modeling solution.
 
 <img src='/assets/images/spike_jungle.png'>
 
 ---
 
 ## Ephys Decoder
-Interface collecting multiple algorithms of neural population decoding, including a type of latent space analysis ([Churchland et al. 2012](https://www.nature.com/articles/nature11129)) and stimulus reconstruction ([Mesgarani & Chang 2012](https://www.nature.com/articles/nature11020)).
+What does a brain actually hear? This tool applies neural population decoding algorithms to reconstruct the sound information that a bird's auditory cortex encoded while listening to a song.
 
-Click the sound on the left to hear the actual double-barred finch song stimulus shown in the Ephys Explorer animation above. Next, click the sound on the right to hear the song reconstructed from activity of the neurons shown in the same plot.
+Click the left audio file to hear the real song stimulus. Click the right to hear that same song reconstructed entirely from the neural activity of the same neurons shown in the Ephys Explorer above. This is what hearing sounds like from the inside.
 
 | [real song](/assets/docs/stim_real_proc.wav) | [reconstructed song](/assets/docs/stim_recon_proc.wav) |
+
+The tool also implements latent space analysis to visualize the geometry of neural population dynamics during sound processing.
 
 <img src='/assets/images/ephys_decoder.png'>
 
 ---
 
 ## SylLabeler
-Database management and annotation interface to help with labeling syllables in birdsong. Sequence analyses like those used in NLP require discrete, labeled units (e.g. ABCABCABC). For text or speech, this is intuitive because words are already discrete units. For other animal vocalizations, like birdsong, units have to be classified and then labeled based on their acoustic similarities and differences. I made and used this app for several projects to label and keep track of tens of thousands of syllables and dozens of tutor-pupil relationships. It also implements dimensionality reduction and basic clustering to help with classifying song syllables into types.
+Database management and annotation tool for structuring raw audio data into labeled sequences suitable for NLP-style analysis.
+
+Sequence modeling requires discrete, labeled units the same way NLP needs words before it can model sentences. For animal vocalizations, those units don't arrive pre-segmented: they have to be identified, classified, and tracked across tens of thousands of events and hundreds of subjects. SylLabeler replaced a fragmented, manual workflow with a single interface that handled segmentation, labeling, dimensionality reduction, and cluster-based classification in one place.
+
+Used across multiple projects and adopted by other teams in the lab. The GIF below shows the interface in action.
 
 <img src='/assets/images/syllabeler.gif'>
 
 ---
 
 ## Brain Maker
-In 2019 I had an idea for a side project to do a network meta-analysis on the known connectivity of auditory and vocal regions in the songbird brain. Despite decades of study, it is still unclear how the auditory memory of a tutor's song enters the song production and learning system, and I reasoned that a full picture of the known circuitry could help. I built this app as a tool to help aggregate details in published anatomical studies, like type of tracer used, volume injected, species, *etc.* I built the app and started inputting data, but never finished it. Seems [Savoy, Anderson and Gogola (2024)](https://link.springer.com/article/10.1186/s12868-024-00919-3) at [oscine-net.org](https://oscine-net.org/) had the same idea and did a better job, anyway!
+Prototype meta-analysis and network visualization tool for synthesizing findings across published anatomical studies.
+
+The problem: decades of neuroscience research on auditory-vocal brain circuits exist scattered across hundreds of papers, with no unified, queryable database of the connectivity. I designed and built Brain Maker to help solve that. It's a structured interface for ingesting study metadata (tracer type, injection site, species, connectivity outcome) and rendering the known circuit as an interactive network graph.
+
+The project reached a working prototype stage before I paused it to focus on dissertation work. In the interim, another research team independently pursued the same idea and released [oscine-net.org](https://oscine-net.org/), which I take as validation that the problem was real and the approach was sound. The screenshot below shows the data entry and network visualization interface.
 
 <img src='/assets/images/screen_of_screen.png'>
