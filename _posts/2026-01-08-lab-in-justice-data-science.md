@@ -1,15 +1,16 @@
 ---
-title:  "applied data science: course design & teaching"
+title:  "laboratory in justice data science"
 layout: post
 ---
 
-In 2022 and 2024 I co-designed and taught the *Laboratory in Justice Data Science* at Columbia University, an original applied data science course for graduate and undergraduate students, developed alongside faculty [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger).
+In 2022 and 2024 I co-designed and taught the *Laboratory in Justice Data Science* at Columbia University, an original applied data science course for graduate and undergraduate students, alongside faculty [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger).
 
-We built the course around a single conviction: data science skills are best learned when the data matter. Each lesson was grounded in a real policy problem. Examples included racial bias in recidivism prediction algorithms, geographic patterns of police use of force, and the spread of misinformation through social networks. Students left able to wrangle, model, visualize, and explain what their results meant for people.
+We built the course around the conviction that data skills are best learned when the data matter. Each lesson was grounded in a real policy problem. Examples included racial bias in recidivism prediction algorithms, geographic patterns of police use of force, and the spread of misinformation through social networks. Students left able to wrangle, model, visualize, and explain what their results meant for people. One of them published their capstone in a peer-reviewed journal.
 
-I wrote and taught 20 hours of original lectures and 7 hands-on assignments covering the full stack: APIs and web scraping, data wrangling, visualization, predictive modeling, algorithmic fairness, NLP, network analysis, and meta-analysis. All in R, on real datasets with real policy stakes. Students evaluated my teaching highly: [2022](/assets/docs/evals_jds_2022.pdf) · [2024](/assets/docs/evals_jds_2024.pdf). Below is an example slide I made to start a discussion on the wrong and right ways to visualize data.
+I wrote and taught 20 hours of original lectures and 7 hands-on assignments covering the full stack: APIs and web scraping, data wrangling, visualization, predictive modeling, algorithmic fairness, NLP, network analysis, and meta-analysis. All in R, on real datasets with real policy stakes. Students evaluated my teaching highly: [2022](/assets/docs/evals_jds_2022.pdf) · [2024](/assets/docs/evals_jds_2024.pdf). Below are three exemplar lessons that highlight the breadth and depth of skills and issues covered:
 
-<img width=600 src='/assets/images/jds_screengrab.png'>
+| <img src='/assets/images/thumb_jds_1.png'> | <img src='/assets/images/thumb_jds_2.png'> | <img src='/assets/images/thumb_jds_3.png'> |
+| [COMPAS fairness](/jds assignments/A6 predictive analytics I.html) — Predictive modeling and algorithmic fairness: train a random forest on real recidivism data, then audit it for racial bias. Does the model make different kinds of errors for Black and White defendants? | [NIJ recidivism](/jds assignments/A7 predictive analytics II.html) — Neural networks from scratch on a national recidivism dataset. Students interrogate which input variables carry predictive power and which may be racial proxies in disguise. | [Geospatial analysis](/jds assignments/A5 data visualization II.html) — Mapping real-world data in R: from John Snow's 1854 cholera cases to live NYC arrest records. Students build heat maps, work with shapefiles, and pull data directly from city APIs. |
 
 Assignments were designed to stretch students' analytical and critical thinking. Feedback included:
 > I found this assignment very cool and I feel like I learned a lot. I'm glad that we use real world examples because I like that I think about the assignment even after it is turned in.
@@ -32,7 +33,7 @@ These outcomes are what the course was for.
 
 ---
 
-**Full curriculum for my part of the course:** each `Lecture` links to my Powerpoint slides, each `Assignment` to the R markdown document students worked from, and each `Data source` to the real-world data at the lesson's center.
+**The full curriculum for my part of the course is below.** Each `Lecture` links to my Powerpoint slides, each `Assignment` to the R markdown document students worked from, and each `Data source` to the real-world data used.
 
 |------------------------------------------------------|
 |  | Lecture | Description | Assignment | Data source |
