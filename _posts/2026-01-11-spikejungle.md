@@ -5,17 +5,17 @@ layout: post
 
 *A 3-classifier ensemble (SVM, Random Forest, KDE) that automated quality screening of voltage recordings, trained on 411M+ labeled observations across 155 GB. Eliminated hundreds of hours of manual review per research program and was adopted by 3 independent research teams as standard tooling.*
 
-**At a glance**
+**At a glance:**
 
-| Role | Sole designer, builder, and deployer |
-| Stack | MATLAB, scikit-learn-style ensemble methods, custom feature pipelines |
-| Training data | 411M+ labeled observations · 155 GB · 2 published datasets |
-| Validation | 32 unseen experiments · 74-92% inter-classifier agreement |
-| Deployment | Adopted by 3 indepent research teams, plus my own |
-| Code | [GitHub](https://github.com/amnion/spikejungle) (*repository forthcoming*) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
+| **Role** | Sole designer, builder, and deployer |
+| **Stack** | MATLAB · scikit-learn-style ensemble methods · custom feature pipelines |
+| **Training data** | 411M+ labeled observations · 155 GB · 2 published datasets |
+| **Validation** | 32 unseen experiments · 74-92% inter-classifier agreement |
+| **Deployment** | Adopted by 3 independent research teams, plus my own |
+| **Code** | [GitHub](https://github.com/amnion/spikejungle) (*repository forthcoming*) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
 
 ## The problem
-Brain recordings produce continuous voltage signals containing two kinds of events: real neural spikes (the actual signal) and noise from electrical interference and subject movement. Across thousands of labs worldwide, the two are still separated **by hand** — expert reviewers screening events one by one, hour by hour.
+Brain recordings produce continuous voltage signals containing two kinds of events: real neural spikes (the actual signal) and noise from electrical interference and subject movement. Across thousands of labs worldwide, the two are still often separated **by hand** — expert reviewers screening events one by one, hour by hour.
 
 This doesn't scale. A single experiment generates tens to hundreds of thousands of candidate events. A research program — multiple subjects, multiple sessions, multiple years — generates tens of millions. Manual review becomes the bottleneck for the entire scientific process. It is also subjective: different reviewers draw the noise/signal line differently, introducing inconsistency into the published record.
 
@@ -30,9 +30,9 @@ I built SpikeJungle to remove this bottleneck.
 ## What I built
 A multiple-classifier system that automates noise removal. Three independent classifiers vote on each candidate event; majority rules; disagreement between classifiers is itself informative because it flags ambiguous events for targeted human review.
 
-**Three classifiers, by design.** Single-model systems fail in opaque ways on edge cases. An ensemble where models disagree gives you a built-in confidence signal: 3-way agreement is high-confidence; 2-vs-1 splits are routed to human review; this turns "this model gave a wrong answer" into "this event is genuinely ambiguous." 
+**Three classifiers, by design.** Single-model systems fail in opaque ways on edge cases. An ensemble where models disagree gives you a built-in confidence signal: 3-way agreement is high-confidence; 2-vs-1 splits are routed to human review.
 
-**Class imbalance was a real problem.** 93% of events were real spikes; 7% were noise. Standard training caused models to never predict the minority class — they learned to optimize accuracy by always saying "spike." I solved this with balanced subsampling without replacement: each training round sampled equal-sized subsets from each class, preserving within-class statistical properties while equalizing representation across classes.
+**Class imbalance was a real problem.** 93% of events were real spikes; 7% were noise. Standard training caused models to never predict the minority class — they learned to optimize accuracy by always saying "spike." I solved this with balanced subsampling without replacement: each training round sampled equal-sized subsets from each class, preserving within-class statistical properties while equalizing representation.
 
 **Five feature representations × three classifier families.** I systematically compared raw waveforms, wavelets, wavelet scattering, PCA, and hand-engineered features against SVM, Random Forest, and KDE. Raw waveforms and wavelets outperformed hand-engineered features across the board; RF and SVM performed best overall. The hand-engineered features — the kind a domain expert would design first — were the worst performers, which is itself an interesting finding about where ML beats domain intuition.
 
