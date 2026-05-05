@@ -3,39 +3,58 @@ title:  "spikejungle classifier"
 layout: post
 ---
 
-## Problem: large-scale noise in neuroscience
-Neuroscientists recording electrical activity from brains produce continuous voltage signals containing two types of events: real neural spikes — electrical impulses neurons use to communicate — and noise coming from electrical interference or movement of the recording subject. Before any analysis can begin, the two must be separated. For many of the thousands of labs conducting such experiments, this is done manually by expert reviewers, event by event, hour by hour.
+*A 3-classifier ensemble (SVM, Random Forest, KDE) that automated quality screening of voltage recordings, trained on 411M+ labeled observations across 155 GB. Eliminated hundreds of hours of manual review per research program and was adopted by 3 independent research teams as standard tooling.*
+
+**At a glance**
+
+| Role | Sole designer, builder, and deployer |
+| Stack | MATLAB, scikit-learn-style ensemble methods, custom feature pipelines |
+| Training data | 411M+ labeled observations · 155 GB · 2 published datasets |
+| Validation | 32 unseen experiments · 74-92% inter-classifier agreement |
+| Deployment | Adopted by 3 indepent research teams, plus my own |
+| Code | [GitHub](https://github.com/amnion/spikejungle) (*repository forthcoming*) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
+
+## The problem
+Brain recordings produce continuous voltage signals containing two kinds of events: real neural spikes (the actual signal) and noise from electrical interference and subject movement. Across thousands of labs worldwide, the two are still separated **by hand** — expert reviewers screening events one by one, hour by hour.
+
+This doesn't scale. A single experiment generates tens to hundreds of thousands of candidate events. A research program — multiple subjects, multiple sessions, multiple years — generates tens of millions. Manual review becomes the bottleneck for the entire scientific process. It is also subjective: different reviewers draw the noise/signal line differently, introducing inconsistency into the published record.
 
 <img src='/assets/images/spikejungle_fig1.png'>
 
-Left: a clean recording segment, with real spikes (black arrowheads) showing their characteristic waveform shape. Right: the same recording contaminated by motion artifacts (red arrowheads) — bursts of electrical noise that dwarf the real signal and must be removed before analysis.
+*Left: a clean recording segment with real spikes (black arrowheads). Right: the same recording contaminated by motion artifacts (red arrowheads) — bursts of electrical noise that dwarf the real signal.*
 
-Manual review doesn't scale. Across a single experiment, a recording session may contain tens of thousands of candidate events. Across a research program — multiple subjects, multiple sessions, multiple years — the volume becomes the bottleneck for progress. Review is also subjective: different reviewers draw the line differently, introducing inconsistency into the data that underlies published findings.
-
-I built SpikeJungle to solve this.
-
-## Solution: an ensemble classifier trained on expert work
-SpikeJungle is a multiple-classifier system that automates noise removal from voltage recording data. The core idea is that rather than trusting any single model, three independent classifiers vote on each event (spike or noise) and the majority rules. Disagreement between classifiers is informative because it flags ambiguous cases for targeted review.
-
-The system was trained and validated on two labeled datasets totaling 155 GB and 411 million observations. These were real experimental data, not benchmarks. Training classes were severely imbalanced: 93% of events were real spikes and 7% were noise. Standard training caused models to never predict noise. I corrected this by training on balanced random subsets sampled without replacement, equalizing class representation while preserving the statistical properties of each class.
-
-I systematically compared 5 feature extraction strategies — raw waveforms, wavelets, wavelet scattering, PCA, and hand-engineered features — across 3 classifier families: Support Vector Machines (SVM), Random Forests (RF), and Kernel Density Estimates (KDE). Raw waveforms and wavelets outperformed hand-engineered features across the board, with Random Forest and SVM performing best overall.
-
-<img src='/assets/images/spikejungle_fig8.png'>
-
-The full pipeline on a real recording. Panel A: raw input data visualized as a heatmap — each row is one candidate event, time on the x-axis, voltage on the y-axis. The wide horizontal bands of fluctuation are noise clusters. Panel B: predictions from each of the three classifiers (SVM, RF, KDE) aligned to the input — black rows are predicted spikes, light rows are predicted noise. Panel C: the same data plotted as voltage traces over time, with noise events flagged in red by each classifier independently, and removed by majority vote in the final panel. Panel D: accepted spike waveforms (black) and rejected noise waveforms (red). Panel E: agreement statistics — in this example, all three classifiers agreed on 87.97% of predictions.
-
-Full pipeline on a real recording channel with noise. (a) Raw input events as a heatmap - rows are candidate events. Time is on the x-axis and color is mean voltage (low to high). (b) Predictions from of each classifier (SVM, RF, KDE) aligned to the input in (a). Light blue rows are where the signal passes the "noise-check". Black rows are where a model rejected the event. (c) Shows the same events as in (a-b) over time. Movement artifacts by the subject are obvious as "streaks" or "tears" running down the panels in (c). (d) Waveforms of accepted (black) and rejected (red) events. (e) Agreement statistics. Here, the 3 classifiers agreed on 87.97% of predictions.
-
-## Results
-Across 32 experiments on new, unseen data, unanimous classifier agreement ranged from 74–92%. The system successfully isolated noise clusters while retaining real spikes. But, the most important validation wasn't accuracy on held-out data. It was biological: I confirmed that the stimulus response of neurons — the signal that drives scientific conclusions — was preserved after cleaning, not degraded by it.
-
-<img src='/assets/images/spikejungle_fig9.png'>
-
-Validation on a real experiment. Panel A: the audio waveform of a birdsong stimulus presented to the subject. Panels B and C: raster plots of one neuron's spike responses to the same stimulus, before (B) and after (C) classifier-based noise removal. Each tick mark is a spike; each row is one trial. The temporal structure of the neural response — the patterns that encode information about the stimulus — is preserved after cleaning. The noise is gone; the signal is intact.
-
-SpikeJungle eliminated hundreds of hours of manual review labor across multiple ongoing research projects and was adopted by three independent research teams. It is available on [GitHub]().
+I built SpikeJungle to remove this bottleneck.
 
 ---
 
-*The full write-up, including feature engineering comparisons, classifier architectures, and validation methodology, is available as a [PDF here](/assets/docs/spikejungle_writeup.pdf).*
+## What I built
+A multiple-classifier system that automates noise removal. Three independent classifiers vote on each candidate event; majority rules; disagreement between classifiers is itself informative because it flags ambiguous events for targeted human review.
+
+**Three classifiers, by design.** Single-model systems fail in opaque ways on edge cases. An ensemble where models disagree gives you a built-in confidence signal: 3-way agreement is high-confidence; 2-vs-1 splits are routed to human review; this turns "this model gave a wrong answer" into "this event is genuinely ambiguous." 
+
+**Class imbalance was a real problem.** 93% of events were real spikes; 7% were noise. Standard training caused models to never predict the minority class — they learned to optimize accuracy by always saying "spike." I solved this with balanced subsampling without replacement: each training round sampled equal-sized subsets from each class, preserving within-class statistical properties while equalizing representation across classes.
+
+**Five feature representations × three classifier families.** I systematically compared raw waveforms, wavelets, wavelet scattering, PCA, and hand-engineered features against SVM, Random Forest, and KDE. Raw waveforms and wavelets outperformed hand-engineered features across the board; RF and SVM performed best overall. The hand-engineered features — the kind a domain expert would design first — were the worst performers, which is itself an interesting finding about where ML beats domain intuition.
+
+<img src='/assets/images/spikejungle_fig8.png'>
+
+*Full pipeline on one recording channel. A: raw input events as a heatmap; rows are candidate events, x-axis is time, color is voltage. B: predictions from each classifier (SVM, RF, KDE) aligned to the input — light rows accepted, black rows rejected. C: the same events plotted over time, with classifier-rejected noise highlighted in red and the cleaned majority-vote output in the bottom panel. D: accepted spike waveforms (black) vs. rejected noise (red). E: classifier agreement statistics — in this example, all three classifiers agreed on 87.97% of predictions.*
+
+## Results
+Across 32 unseen experiments, unanimous 3-classifier agreement ranged from 74–92%. The system isolated noise clusters while retaining real spikes.
+
+But accuracy on held-out data wasn't the validation that mattered most. **The validation that mattered was biological:** the actual signal — neurons' temporal responses to stimuli, which is what the science depends on — had to survive cleaning intact. If cleaning the noise also degraded the signal, the tool would be worse than useless.
+
+<img src='/assets/images/spikejungle_fig9.png'>
+
+*Stimulus-response validation. A: audio waveform of a birdsong stimulus. B–C: raster plots of one neuron's response to the same stimulus, before (B) and after (C) classifier-based cleaning. Each tick is a spike; each row is one trial. The temporal structure that encodes information about the stimulus is preserved. Noise is gone; signal is intact.*
+
+**Impact:** SpikeJungle eliminated hundreds of hours of manual review labor across multiple ongoing research programs (an estimated 4–5 hours saved per experiment, across 300+ experiments) and was adopted by **3 independent research teams** besides my own as standard preprocessing. The disagreement-flagging design meant teams could trust the system on the easy cases (most events) and focus expert review on the genuinely ambiguous ones — where their judgment was actually adding value.
+
+---
+
+*Full technical write-up with feature engineering comparisons, hyperparameter search, and validation methodology is available [as a PDF](/assets/docs/spikejungle_writeup.pdf).*
+
+*Want to talk about ML for sensor data? [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*
+
+---
