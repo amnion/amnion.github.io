@@ -11,6 +11,8 @@ Translating dense quantitative results into figures that non-specialists can rea
 
 Schematic diagram pairing anatomy with hierarchical findings: songbird brains contain two interacting systems for vocal communication: one for production (*a*), one for perception (*b-c*). My dissertation work showed that the elements of a bird's song (syllables) are learned from experience, while their sequential ordering (syntax) is shaped by species genetics. The diagrams highlight the physical closeness of the vocal-motor and auditory systems, and the importance of auditory processing circuits for behavioral function.
 
+**Edwards JA**. **2025**. [Play with the changes: Innate rules for learned vocal communication in songbirds](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79). *PhD Dissertation*. Columbia University.
+
 ---
 
 <img width=600 src='/assets/images/datavis_SciRep.png'>
@@ -40,3 +42,7 @@ Causal-inference study visualized as a side-by-side comparison; exemplar case (*
 Multi-species, multi-neuron comparison combining experimental methods, stimulus, and neural responses in one figure. *Top (a-b):* schematic and histological reconstruction of recording electrode penetrations. *Middle (c):* spectrograms of song stimuli, with syllables color-coded by species. *Bottom (c):* raster plots where each tick is a single neuron firing and each row is one trial of the same stimulus. The figure validates that the brain areas recorded from contain neurons selective for songs of their own species over other species' songs. The major finding of the project was that the acoustics of individual syllables are encoded by individual neurons (the "what") while species-specific song timing is encoded by interactions of neurons in circuits (the "when"). The hierarchical encoding pattern mirrors the hierarchical structure of the behavior itself.
 
 **Edwards JA**. **2025**. [Play with the changes: Innate rules for learned vocal communication in songbirds](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79). *PhD Dissertation*. Columbia University.
+
+---
+
+*Want to talk about data viz and design? [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*

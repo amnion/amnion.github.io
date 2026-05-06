@@ -17,15 +17,15 @@ layout: page
 
 Good data science is sound reasoning, followed by design that makes the reasoning land.
 
-I'm a data scientist with a decade of building pipelines, models, and tools on complex real-world data — time-series analysis, machine learning, experimental design, and translating quantitative results into decisions non-experts can act on. Currently looking for data science and analytics roles in industry, based in New York.
+I'm a data scientist with a decade of building pipelines, models, and tools on complex real-world data — time-series analysis, machine learning, experimental design, and translating quantitative results into decisions people can act on. Currently looking for data science and analytics roles in industry, based in New York.
 
-The work I'm proudest of:
+Work I'm most proud of:
 
 - A [production ML pipeline](/2026/01/11/spikejungle) for cleaning large-scale neural recordings used by independent research teams.
 - An [original applied data science curriculum](/2026/01/08/lab-in-justice-data-science) at Columbia, with two student capstones reaching publication and three students placed in graduate programs at LSE, NYU, and Columbia's Center for Justice.
 - [Scientific visualizations](/2026/01/10/scientific-visualizations) and [interactive tools](/2026/01/09/birdsong-science-apps) for exploring high-dimensional time-series and sequence data.
 
-I completed my PhD at Columbia (Psychology, 2019–2025) in [Sarah Woolley's lab](https://woolleylab.com/), funded by an [NIH predoctoral grant (F31)](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons and controlled cross-species rearing experiments — a textbook causal-inference design — to separate genetic from learned drivers of vocal behavior, with direct relevance to how the brain organizes speech. Columbia's Zuckerman Institute [profiled my journey](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
+I completed my PhD at Columbia (Psychology, 2019–2025) in [Sarah Woolley's lab](https://woolleylab.com/), funded by an [NIH predoctoral grant (F31)](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons and controlled rearing experiments to separate genetic from learned drivers of vocal behavior, with direct relevance to how the brain organizes speech. Columbia's Zuckerman Institute [profiled my journey](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
 
 ## Peer-reviewed Publications
 

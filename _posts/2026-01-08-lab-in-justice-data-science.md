@@ -5,7 +5,7 @@ layout: post
 
 We built this course around the conviction that data skills are best learned when the data matter. Each lesson was grounded in a real policy problem. Examples included racial bias in recidivism prediction algorithms, geographic patterns of police use of force, and the spread of misinformation through social networks. Students left able to wrangle, model, visualize, and explain what their results meant for people. Two of their capstones reached publication, including one in a peer-reviewed journal.
 
-*Laboratory in Justice Data Science* ran in spring 2022 and 2024 at Columbia, co-designed and taught with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). I wrote and taught 20 hours of original lectures and 7 hands-on assignments covering the full stack: APIs and web scraping, data wrangling, visualization, predictive modeling, algorithmic fairness, NLP, network analysis, and meta-analysis. All in R, on real datasets with real policy stakes. Students evaluated my teaching highly: [2022](/assets/docs/evals_jds_2022.pdf) · [2024](/assets/docs/evals_jds_2024.pdf). Below are three exemplar lessons that highlight the breadth and depth of skills and issues covered:
+*Laboratory in Justice Data Science* ran in spring 2022 and 2024 at Columbia, co-designed and taught with [Geraldine Downey](https://psychology.columbia.edu/content/geraldine-downey) and [Niall Bolger](https://psychology.columbia.edu/content/niall-bolger). I wrote and taught 20 hours of original lectures and 7 hands-on assignments covering the full stack: APIs and web scraping, data wrangling, visualization, predictive modeling, algorithmic fairness, NLP, network analysis, and meta-analysis. All in R, on real datasets with real policy stakes. Students rated my teaching highly: [2022](/assets/docs/evals_jds_2022.pdf) · [2024](/assets/docs/evals_jds_2024.pdf). Below are three lessons that highlight the breadth and depth of skills and issues covered:
 
 | --- |
 | [COMPAS fairness](/jds assignments/A6 predictive analytics I.html) | [NIJ recidivism](/jds assignments/A7 predictive analytics II.html) | [Geospatial analysis](/jds assignments/A5 data visualization II.html) |
@@ -28,7 +28,7 @@ Students produced original policy proposals as capstone projects. Examples of wh
 
 • Demographic analysis of talent migration out of East Coast cities in response to anti-LGBTQ legislation, showing "brain drain" in economic and human capital terms.
  
-**Most students entered the course with little to no coding experience. All of them exited with serious data chops.** Goya declared Statistics as a major and went on to work with Columbia's Center for Justice for several years. Haleigh used what she learned about R and NLP to pursue a Master's in Global Media and Communications at the London School of Economics. Gianna went on to obtain a Master's in Urban Data Science at NYU.
+**Most students entered the course with little to no coding experience. All of them exited with serious data chops.** Gabriella declared Statistics as a major and went on to work with Columbia's Center for Justice for several years. Haleigh used what she learned about R and NLP to pursue a Master's in Global Media and Communications at the London School of Economics. Gianna honed in on geospatial analysis and went on to obtain a Master's in Urban Data Science at NYU.
 
 These outcomes are what the course was for.
 
