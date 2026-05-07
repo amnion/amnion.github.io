@@ -21,7 +21,7 @@ This doesn't scale. A single experiment generates tens to hundreds of thousands 
 
 <img src='/assets/images/spikejungle_fig1.png'>
 
-*Left: a clean recording segment with real spikes (black arrowheads). Right: the same recording contaminated by motion artifacts (red arrowheads) — bursts of electrical noise that dwarf the real signal.*
+<figcaption>Left: a clean recording segment with real spikes (black arrowheads). Right: the same recording contaminated by motion artifacts (red arrowheads) — bursts of electrical noise that dwarf the real signal.</figcaption>
 
 I built SpikeJungle to remove this bottleneck.
 
@@ -38,7 +38,7 @@ A multiple-classifier system that automates noise removal. Three independent cla
 
 <img src='/assets/images/spikejungle_fig8.png'>
 
-*Full pipeline on one recording channel. A: raw input events as a heatmap; rows are candidate events, x-axis is time, color is voltage. B: predictions from each classifier (SVM, RF, KDE) aligned to the input — light rows accepted, black rows rejected. C: the same events plotted over time, with classifier-rejected noise highlighted in red and the cleaned majority-vote output in the bottom panel. D: accepted spike waveforms (black) vs. rejected noise (red). E: classifier agreement statistics — in this example, all three classifiers agreed on 87.97% of predictions.*
+<figcaption>Full pipeline on one recording channel. A: raw input events as a heatmap; rows are candidate events, x-axis is time, color is voltage. B: predictions from each classifier (SVM, RF, KDE) aligned to the input — light rows accepted, black rows rejected. C: the same events plotted over time, with classifier-rejected noise highlighted in red and the cleaned majority-vote output in the bottom panel. D: accepted spike waveforms (black) vs. rejected noise (red). E: classifier agreement statistics — in this example, all three classifiers agreed on 87.97% of predictions.</figcaption>
 
 ## Results
 Across 32 unseen experiments, unanimous 3-classifier agreement ranged from 74–92%. The system isolated noise clusters while retaining real spikes.
@@ -47,7 +47,7 @@ But accuracy on held-out data wasn't the validation that mattered most. **The va
 
 <img src='/assets/images/spikejungle_fig9.png'>
 
-*Stimulus-response validation. A: audio waveform of a birdsong stimulus. B–C: raster plots of one neuron's response to the same stimulus, before (B) and after (C) classifier-based cleaning. Each tick is a spike; each row is one trial. The temporal structure that encodes information about the stimulus is preserved. Noise is gone; signal is intact.*
+<figcaption>Stimulus-response validation. A: audio waveform of a birdsong stimulus. B–C: raster plots of one neuron's response to the same stimulus, before (B) and after (C) classifier-based cleaning. Each tick is a spike; each row is one trial. The temporal structure that encodes information about the stimulus is preserved. Noise is gone; signal is intact.</figcaption>
 
 **Impact:** SpikeJungle eliminated hundreds of hours of manual review labor across multiple ongoing research programs (an estimated 4–5 hours saved per experiment, across 300+ experiments) and was adopted by **3 independent research teams** besides my own as standard preprocessing. The disagreement-flagging design meant teams could trust the system on the easy cases (most events) and focus expert review on the genuinely ambiguous ones — where their judgment was actually adding value.
 
@@ -56,5 +56,3 @@ But accuracy on held-out data wasn't the validation that mattered most. **The va
 *Full technical write-up with feature engineering comparisons, hyperparameter search, and validation methodology is available [as a PDF](/assets/docs/spikejungle_writeup.pdf).*
 
 *Want to talk about ML for sensor data? [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*
-
----
