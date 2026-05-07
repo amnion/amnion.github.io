@@ -3,7 +3,7 @@ title:  "spikejungle classifier"
 layout: post
 ---
 
-*A 3-classifier ensemble (SVM, Random Forest, KDE) that automated quality screening of voltage recordings, trained on 411M+ labeled observations across 155 GB. Eliminated hundreds of hours of manual review per research program and was adopted by 3 independent research teams as standard tooling.*
+*A 3-classifier ensemble (SVM, Random Forest, KDE) that automated quality screening of voltage recordings, trained on 411M+ labeled observations across 155 GB. Eliminated hundreds of hours of manual review per research program and was adopted by 4 independent research teams as standard tooling.*
 
 **At a glance:**
 
@@ -11,7 +11,7 @@ layout: post
 | **Stack** | MATLAB · scikit-learn-style ensemble methods · custom feature pipelines |
 | **Training data** | 411M+ labeled observations · 155 GB · 2 published datasets |
 | **Validation** | 32 unseen experiments · 74-92% inter-classifier agreement |
-| **Deployment** | Adopted by 3 independent research teams, plus my own |
+| **Deployment** | Adopted by 4 independent research teams |
 | **Code** | [GitHub](https://github.com/amnion/spikejungle) (*repository forthcoming*) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
 
 ## The problem
@@ -49,7 +49,7 @@ But accuracy on held-out data wasn't the validation that mattered most. **The va
 
 <figcaption>Stimulus-response validation. A: audio waveform of a birdsong stimulus. B–C: raster plots of one neuron's response to the same stimulus, before (B) and after (C) classifier-based cleaning. Each tick is a spike; each row is one trial. The temporal structure that encodes information about the stimulus is preserved. Noise is gone; signal is intact.</figcaption>
 
-**Impact:** SpikeJungle eliminated hundreds of hours of manual review labor across multiple ongoing research programs (an estimated 4–5 hours saved per experiment, across 300+ experiments) and was adopted by **3 independent research teams** besides my own as standard preprocessing. The disagreement-flagging design meant teams could trust the system on the easy cases (most events) and focus expert review on the genuinely ambiguous ones — where their judgment was actually adding value.
+**Impact:** SpikeJungle eliminated hundreds of hours of manual review labor across multiple ongoing research programs (an estimated 4–5 hours saved per experiment, across 300+ experiments) and was adopted by **4 independent research teams** as standard preprocessing. The disagreement-flagging design meant teams could trust the system on the easy cases (most events) and focus expert review on the genuinely ambiguous ones — where their judgment was actually adding value.
 
 ---
 
