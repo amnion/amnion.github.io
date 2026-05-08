@@ -12,8 +12,8 @@ layout: page
 
 [github](https://github.com/amnion) ·
 [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) ·
-[google scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=APjjwuaun3kig7tEeoP0x-HKIfzuPSzHeHLRdonykAG9Ah_8zOcir9_zobORiCYKiiL7NXh4yqoPceY21V55mapijMeMQ1iihgLa9KWsWMc&user=xmR4DFsAAAAJ) ·
-[résumé](/Edwards Resume 2026 5 3.pdf)
+[google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) ·
+[résumé](/Edwards Resume 2026 5 8.pdf)
 
 Good data science is sound reasoning, followed by design that makes the reasoning land.
 
