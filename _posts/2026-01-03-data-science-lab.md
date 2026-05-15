@@ -1,5 +1,5 @@
 ---
-title:  "laboratory in justice data science"
+title:  "Laboratory in Justice Data Science"
 layout: post
 ---
 

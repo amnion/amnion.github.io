@@ -1,5 +1,5 @@
 ---
-title:  "spikejungle classifier"
+title:  "SpikeJungle classifier"
 layout: post
 ---
 
@@ -12,7 +12,7 @@ layout: post
 | **Training data** | 411M+ labeled observations · 155 GB · 2 published datasets |
 | **Validation** | 32 unseen experiments · 74-92% inter-classifier agreement |
 | **Deployment** | Adopted by 4 independent research teams |
-| **Code** | [GitHub](https://github.com/amnion/spikejungle) (*repository forthcoming*) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
+| **Code** | [GitHub](https://github.com/amnion/spikejungle) · [Full technical write-up (PDF)](/assets/docs/spikejungle_writeup.pdf) |
 
 ## The problem
 Brain recordings produce continuous voltage signals containing two kinds of events: real neural spikes (the actual signal) and noise from electrical interference and subject movement. Across thousands of labs worldwide, the two are still often separated **by hand** — expert reviewers screening events one by one, hour by hour.
@@ -32,7 +32,49 @@ A multiple-classifier system that automates noise removal. Three independent cla
 
 **Three classifiers, by design.** Single-model systems fail in opaque ways on edge cases. An ensemble where models disagree gives you a built-in confidence signal: 3-way agreement is high-confidence; 2-vs-1 splits are routed to human review.
 
-**Class imbalance was a real problem.** 93% of events were real spikes; 7% were noise. Standard training caused models to never predict the minority class — they learned to optimize accuracy by always saying "spike." I solved this with balanced subsampling without replacement: each training round sampled equal-sized subsets from each class, preserving within-class statistical properties while equalizing representation.
+**Memory and class imbalance were real problems.** The full labeled dataset was 411M+ events across 155 GB, which was too large to hold in memory and needed to be resampled because the spike-noise class imbalance was 93% to 7%. I built the rebalancing pipeline around MATLAB's `tall` array abstraction. Tall arrays defer computation until a `gather()` call, meaning you write code as if the data fit in RAM and MATLAB chunks it through disk later. Combined with `fileDatastore` for managing the underlying files, I was able to randomly sample equal numbers of spikes and non-spike events without ever materializing the full dataset.
+
+```matlab
+%% Build a tall array over labeled spike files
+% Each file holds a channel's worth of waveform snippets and class
+% labels (1 = spike, 0 = non-spike). The full dataset is too large to
+% load into memory, so we wrap the file list in a datastore and defer
+% computation via a tall array.
+
+ds = fileDatastore(all_file_paths, ...
+                   'ReadFcn', @spikeReaderFunction, ...
+                   'UniformRead', true);
+
+tallSpikeData = tall(ds);
+write([SAVE_PATH 'spikeTrainingDataTall'], tallSpikeData);
+
+
+function spikeMatrix = spikeReaderFunction(fname)
+    % Load a single channel file and return [label, waveform] rows.
+    % Snippets are concatenated across electrode shanks in the source
+    % files; we trim to the relevant 50 samples around the threshold
+    % crossing and collapse multi-class labels to spike (1) vs non-spike (0).
+    spikeData = load(fname);
+
+    channel = regexp(fname, '_ch(\d+)\.mat', 'tokens', 'once');
+    channel = str2double(channel{1});
+
+    % Trim concatenated shank data to this channel's window
+    snippetLen = spikeData.par.w_pre + spikeData.par.w_post;
+    chIdx      = find(channel == spikeData.par.ch_nums);
+    window     = (chIdx*snippetLen - snippetLen + 1) : chIdx*snippetLen;
+    spikeData.spikes = spikeData.spikes(:, window);
+
+    % Trim to 50 samples centered on the threshold-crossing event
+    centerIdx = spikeData.par.w_pre;
+    spikeData.spikes = spikeData.spikes(:, centerIdx-15 : centerIdx+34);
+
+    % Collapse multi-class labels (originally 0/1/2/...) to binary
+    spikeData.label(spikeData.label > 1) = 1;
+
+    spikeMatrix = [spikeData.label, spikeData.spikes];
+end
+```
 
 **Five feature representations × three classifier families.** I systematically compared raw waveforms, wavelets, wavelet scattering, PCA, and hand-engineered features against SVM, Random Forest, and KDE. Raw waveforms and wavelets outperformed hand-engineered features across the board; RF and SVM performed best overall. The hand-engineered features — the kind a domain expert would design first — were the worst performers, which is itself an interesting finding about where ML beats domain intuition.
 
