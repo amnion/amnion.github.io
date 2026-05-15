@@ -29,7 +29,7 @@ I completed my PhD at Columbia (Psychology, 2019–2025) in [Sarah Woolley's lab
 
 ## Peer-reviewed Publications
 
-**Edwards JA**, Woolley SMN. **2026**. [A species rules syntax model accurately organizes birdsong syllables into songs](https://www.nature.com/articles/s41598-026-44602-5). *Scientific Reports*. In press.
+**Edwards JA**, Woolley SMN. **2026**. [A species rules syntax model accurately organizes birdsong syllables into songs](https://www.nature.com/articles/s41598-026-44602-5). *Scientific Reports* 16: 14795
 
 **Edwards JA**, Rivera M, Woolley SMN. **2025**. [The temporal organization of learned vocal behavior is predicted by species rather than experience](https://www.jneurosci.org/content/45/11/e0576242025). *Journal of Neuroscience* 45: e0576242025
 
@@ -43,7 +43,7 @@ Williams JH, **Edwards JA**, Ramsey AJ. **2016**. [Economy, efficiency, and the 
 
 ---
 
-*Looking to talk about auditory neuroscience, applied data science, or curriculum design? Email above, or [browse my full portfolio](/portfolio.html).*
+*I'd love to talk more. [Get in touch](mailto:jacobedwards.jae@gmail.com), or [browse my full portfolio](/portfolio.html).*
 
 
 
