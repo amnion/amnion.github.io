@@ -6,13 +6,9 @@ layout: page
 
 <img width=550 src='/assets/images/je_headshot.jpg'>
 
-# Jacob Edwards, PhD
+# Jacob Edwards
 
-jacobedwards.jae@gmail.com ·
-[github](https://github.com/amnion) ·
-[linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) ·
-[google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) ·
-[résumé](/Edwards Resume 2026 5 8.pdf)
+#### jacobedwards.jae@gmail.com · [github](https://github.com/amnion) · [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) · [google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) · [résumé](/Edwards Resume 2026 5 8.pdf)
 
 I'm a data scientist with a decade of building pipelines, models, and tools on complex real-world data. My expertise is in time-series analysis, experimental design, and audiovisual data storytelling. Based in NYC.
 
@@ -20,12 +16,12 @@ I'm a data scientist with a decade of building pipelines, models, and tools on c
 
 - A [reporting gap analysis](/2026/06/22/nyc-potholes) of NYC 311 service request data linked to city action across community districts.
 - A [production ML pipeline](/2026/01/04/spikejungle) for cleaning large-scale neural recordings used by independent research teams.
-- An [original applied data science curriculum](/2026/01/03/data-science-lab) at Columbia, with two student capstones reaching publication.
+- An [original applied data science curriculum](/2026/01/03/data-science-lab) at Columbia that took two student capstones to publication.
 - [Scientific visualizations](/2026/01/01/sci-viz) and [interactive tools](/2026/01/02/my-tools) for exploring high-dimensional time-series and sequence data.
 
 ---
 
-I completed my PhD at Columbia (Psychology, 2019–2025) in [Sarah Woolley's lab](https://woolleylab.com/), funded by an [NIH predoctoral grant (F31)](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons and controlled rearing experiments to separate genetic from learned drivers of vocal behavior, with direct relevance to how the brain organizes speech. Columbia's Zuckerman Institute [profiled my journey](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
+I completed my PhD at Columbia (Psychology, 2019–2025), funded by an [NIH grant (F31)](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons and controlled rearing experiments to separate genetic from learned drivers of vocal behavior, with direct relevance to how the brain organizes speech. Columbia's Zuckerman Institute [profiled my journey](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
 
 ## Peer-reviewed Publications
 
