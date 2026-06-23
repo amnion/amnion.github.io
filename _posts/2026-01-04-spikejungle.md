@@ -1,5 +1,5 @@
 ---
-title:  "SpikeJungle classifier"
+title:  "SpikeJungle Classifier"
 layout: post
 ---
 
@@ -97,4 +97,4 @@ But accuracy on held-out data wasn't the validation that mattered most. **The va
 
 *Full technical write-up with feature engineering comparisons, hyperparameter search, and validation methodology is available [as a PDF](/assets/docs/spikejungle_writeup.pdf).*
 
-*Want to talk about ML for sensor data? [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*
+*I'm always open to connecting. [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*

@@ -52,4 +52,4 @@ These outcomes are what the course was for.
 
 ---
 
-*All slides, assignments, and code linked above are available for reuse with attribution. Want to talk about applied data science teaching, curriculum design, or teaching in the age of LLMs? [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*
+*All slides, assignments, and code linked above are available for reuse with attribution. I'm always open to connecting. [Get in touch](mailto:jacobedwards.jae@gmail.com) or [see the rest of my work](/).*
