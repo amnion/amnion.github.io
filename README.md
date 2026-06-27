@@ -10,7 +10,7 @@ layout: page
 
 #### jacobedwards.jae@gmail.com · [github](https://github.com/amnion) · [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) · [google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) · [résumé](/Edwards Resume 2026 5 8.pdf)
 
-I'm a data scientist with a decade of building pipelines, models, and tools on complex real-world data. My expertise is in time-series analysis, experimental design, and audiovisual data storytelling. Based in NYC.
+I'm a data scientist with a decade building pipelines, models, and tools on complex, real-world data. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
 
 **Examples of my work:**
 
@@ -21,7 +21,7 @@ I'm a data scientist with a decade of building pipelines, models, and tools on c
 
 ---
 
-I completed my PhD at Columbia (Psychology, 2019–2025), funded by an [NIH grant (F31)](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons and controlled rearing experiments to separate genetic from learned drivers of vocal behavior, with direct relevance to how the brain organizes speech. Columbia's Zuckerman Institute [profiled my journey](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
+I completed my PhD at Columbia (Psychology, 2019–2025) with [NIH (F31) funding](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons of birdsong and controlled rearing experiments to isolate causal origins of learned vocal behavior, with direct relevance to how the brain organizes speech. CU's Zuckerman Institute [profiled my story](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
 
 ## Peer-reviewed Publications
 
