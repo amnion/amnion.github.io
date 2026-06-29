@@ -10,7 +10,7 @@ layout: page
 
 #### jacobedwards.jae@gmail.com · [github](https://github.com/amnion) · [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) · [google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) · [résumé](/Edwards Resume 2026 6 29.pdf)
 
-I'm a data scientist with a decade building pipelines, models, and tools on challenging datasets. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
+I'm a scientist with a decade building pipelines, models, and tools on challenging datasets. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
 
 **Examples of my work:**
 
