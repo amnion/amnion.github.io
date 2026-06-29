@@ -8,13 +8,13 @@ layout: page
 
 # Jacob Edwards
 
-#### jacobedwards.jae@gmail.com · [github](https://github.com/amnion) · [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) · [google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) · [résumé](/Edwards Resume 2026 5 8.pdf)
+#### jacobedwards.jae@gmail.com · [github](https://github.com/amnion) · [linkedin](https://www.linkedin.com/in/jacob-edwards-phd-740239124/) · [google scholar](https://scholar.google.com/citations?user=xmR4DFsAAAAJ) · [résumé](/Edwards Resume 2026 6 29.pdf)
 
-I'm a data scientist with a decade building pipelines, models, and tools on complex, real-world data. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
+I'm a data scientist with a decade building pipelines, models, and tools on challenging datasets. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
 
 **Examples of my work:**
 
-- A [reporting gap analysis](/2026/06/22/nyc-potholes) of NYC 311 service request data linked to city action across community districts.
+- A [reporting gap analysis](/2026/06/22/nyc-potholes) of NYC 311 data linking citizen reports to city action across community districts.
 - A [production ML pipeline](/2026/01/04/spikejungle) for cleaning large-scale neural recordings used by independent research teams.
 - An [original applied data science curriculum](/2026/01/03/data-science-lab) at Columbia that took two student capstones to publication.
 - [Scientific visualizations](/2026/01/01/sci-viz) and [interactive tools](/2026/01/02/my-tools) for exploring high-dimensional time-series and sequence data.

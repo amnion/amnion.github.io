@@ -15,15 +15,15 @@ The challenging part of the question is what "represent" *means* quantitatively.
 
 ##### **Figure 1.** New York City's 59 community districts (CDs) were analyzed. CDs are NYC's official sub-borough planning units, with dedicated civic representation and populations in the 130-200k range. The map shows CDs colored by borough and demarcated by white boundaries. Faded colors show the 12 Joint Interest Areas (parks, airports, and other non-residential zones) excluded from analysis. Inset shows population size for each CD within each borough, with a label for each borough's total population.
 
-To quantify the gap for each NYC community district (CD), I aggregated five open datasets, modeled 311 reports and DOT repairs per road-mile using demographics as predictors, and assessed where the two signals diverged. Technical details are in the table below and on my [GitHub](https://github.com/amnion/nyc-potholes). A Tableau dashboard for exploring the underlying data is coming soon.
+To quantify the gap for each NYC community district (CD), I aggregated six open datasets, modeled 311 reports and DOT repairs per road-mile using demographics as predictors, and assessed where the two signals diverged. Technical details are in the table below and on my [GitHub](https://github.com/amnion/nyc-potholes). An interactive dashboard for exploring the underlying data is on [Tableau Public](https://public.tableau.com/views/NYCPotholeReportingGapAnalysis/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 
-| **Data** | [311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9) · [DOT Repairs](https://data.cityofnewyork.us/Transportation/Street-Pothole-Work-Orders-Closed-Dataset-/x9wy-ing4) · [Community Districts](https://data.cityofnewyork.us/City-Government/Community-Districts/5crt-au7u) · [Street Centerlines](https://data.cityofnewyork.us/City-Government/Centerline/inkn-q76z) · [ACS 5-year](https://www.nyc.gov/content/planning/pages/resources/datasets/american-community-survey) |
+| **Data** | [311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9) · [DOT Closed Work Orders](https://data.cityofnewyork.us/Transportation/Street-Pothole-Work-Orders-Closed-Dataset-/x9wy-ing4) · [Community Districts](https://data.cityofnewyork.us/City-Government/Community-Districts/5crt-au7u) · others below |
 | **Stack** | SQL · Python · R · GeoPandas · matplotlib |
 | **Model** | Negative binomial regression, offset by road-miles |
 | **Inference** | Bootstrapped confidence intervals · Benjamini-Hochberg correction |
 | **Code** | [GitHub](https://github.com/amnion/nyc-potholes) |
-| **Dashboard** | Tableau Public *(coming soon)* |
+| **Dashboard** | [Tableau Public](https://public.tableau.com/views/NYCPotholeReportingGapAnalysis/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) |
 
 In raw numbers, citizens reported 2-3 potholes for every one DOT logged as repaired — in every community district, with no exceptions (**Figure 2**). The constant 2-to-1 ratio is partly a data quirk: a single DOT work order can cover multiple potholes along a street segment, while each 311 call typically reports a single pothole. The more interesting question is whether the **gap** between these two signals varies systematically by district, or whether they vary in lockstep with the underlying demographics that predict the raw counts.
 
@@ -55,7 +55,7 @@ This is also good news for citizens. A reasonable suspicion would be that wealth
 ## But aren't 311 and DOT measuring the same thing?
 When I described this finding to my mother, she asked: "Aren't the city's repairs based on the 311 calls themselves? Of course they move together." She isn't wrong. Roughly 60% of DOT pothole work orders in this window originated from citizen-sourced channels, meaning that the city was often responding to the very 311 calls I treated as one of the two signals. A skeptic could argue that my analysis amounts to "the city responds to what citizens report, and what citizens report is what citizens report!"
 
-Two responses here: 1) Even when DOT's work originates from a citizen call, the decision to dispatch a crew, complete the repair, and close the work order is the city's. A 311 call that goes unaddressed produces no work order. Harmony between the two means citizens are calling about real problems and the city is closing the loop. 2) The 40% of DOT work orders that originated from non-citizen channels — yard inspections, borough offices, traffic communications — showed the same relationship to demographics as the citizen-initiated portion. If the analysis were purely tautological, we'd expect the demographic patterns to vanish when we restricted to DOT-internal sources.
+Two responses here: 1) Even when DOT's work originates from a citizen call, the decision to dispatch a crew, complete the repair, and close the work order belongs to the city. A 311 call that goes unaddressed produces no work order. Harmony between the two means citizens are calling about real problems and the city is closing the loop. 2) The 40% of DOT work orders that originated from non-citizen channels — yard inspections, borough offices, traffic communications — showed the same relationship to demographics as the citizen-initiated portion. If the analysis were purely tautological, we'd expect the demographic patterns to vanish when we restricted to DOT-internal sources.
 
 What the analysis *cannot* tell us is whether both signals are biased in the same direction relative to *true* underlying need. Both 311 and DOT measure attention, not incidence. A complete analysis of "representativeness" would require an independent need proxy. NYC DOT's [Street Pavement Rating dataset](https://data.cityofnewyork.us/Transportation/Street-Pavement-Ratings/6yyb-pb25), which rates every street segment on a 1-10 scale through ongoing inspections, would be a good pick for follow-up work.
 
@@ -74,15 +74,18 @@ Noise pollution is a natural next extension. [NYU's Sounds of New York City (SON
 
 **GitHub:** [amnion/nyc-potholes](https://github.com/amnion/nyc-potholes)
 
+**Data Dashboard:** [Tableau Public](https://public.tableau.com/views/NYCPotholeReportingGapAnalysis/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 **Data sources:**
 * [311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9) (NYC OpenData)
 * [Street Pothole Work Orders - Closed](https://data.cityofnewyork.us/Transportation/Street-Pothole-Work-Orders-Closed-Dataset-/x9wy-ing4) (NYC OpenData)
 * [Community Districts](https://data.cityofnewyork.us/City-Government/Community-Districts/5crt-au7u) (NYC OpenData)
 * [Street Centerlines](https://data.cityofnewyork.us/City-Government/Centerline/inkn-q76z) (NYC OpenData)
 * [ACS 2019-2023 5-year estimates](https://www.nyc.gov/content/planning/pages/resources/datasets/american-community-survey) (NYC Dept. of City Planning)
+* [NYC Community Boards](https://data.cityofnewyork.us/City-Government/NYC-Community-Boards/ruf7-3wgc/) (NYC OpenData)
 
 
-**AI statement:** I used Claude (Opus 4.7; Anthropic) on this project. LLM usage was careful, intentional, and collaborative. Text and code were drafted first by me and revised with input from Claude. The project took ~60 hours of effort from start to finish. This was not a weekend vibe code. I used the time deliberately to work through the data, write code myself (especially for SQL practice), and nitpick every strategy, execution, and design choice. The slower pace paid off. I learned a ton, and Claude pointed me toward directions I wouldn't have known existed, which improved the project's scope.
+**AI statement:** I used Claude (Opus 4.7; Anthropic) on this project. LLM usage was careful, intentional, and collaborative. Text and code were drafted first by me and revised with input from Claude. The project took ~90 hours of effort from start to finish. This was not a weekend vibe code. I used the time deliberately to work through the data, write code myself (especially for SQL practice), and nitpick every strategy, execution, and design choice. The slower pace paid off. I learned a ton, and Claude pointed me toward directions I wouldn't have known existed, which improved the project's scope.
 
 ---
 
