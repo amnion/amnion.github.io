@@ -12,7 +12,7 @@ layout: page
 
 I'm a scientist with a decade building pipelines, models, and tools on challenging datasets. My expertise is in time-series analysis (audio and biosensor data), experimental design, and data storytelling. Based in NYC.
 
-**Examples of my work:**
+**Exemplar works:**
 
 - A [reporting gap analysis](/2026/06/22/nyc-potholes) of NYC 311 data linking citizen reports to city action across community districts.
 - A [production ML pipeline](/2026/01/04/spikejungle) for cleaning large-scale neural recordings used by independent research teams.
@@ -21,7 +21,7 @@ I'm a scientist with a decade building pipelines, models, and tools on challengi
 
 ---
 
-I completed my PhD at Columbia (Psychology, 2019–2025) with [NIH (F31) funding](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons of birdsong and controlled rearing experiments to isolate causal origins of learned vocal behavior, with direct relevance to how the brain organizes speech. CU's Zuckerman Institute [profiled my story](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
+I completed my PhD at Columbia (Psychology, 2019–2025) with [NIH (F31) funding](https://reporter.nih.gov/search/ipd8KKjb7kqwONlKDV9PNw/project-details/10607688). My [dissertation](https://academiccommons.columbia.edu/doi/10.7916/7bt6-xb79) used species comparisons of songbird brains and behavior to study the inborn organization of vocal patterning, with direct relevance to how the human brain organizes speech. CU's Zuckerman Institute [profiled my story](https://zuckermaninstitute.columbia.edu/science-life-jacob-edwards) in pictures.
 
 ## Peer-reviewed Publications
 
